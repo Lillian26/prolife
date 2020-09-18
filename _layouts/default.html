@@ -18,17 +18,17 @@
         rel="stylesheet"> -->
 
     <!-- Vendor CSS Files -->
-    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> -->
+    <link href={{site.baseurl}}/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/aos/aos.css" rel="stylesheet">
+    <link href={{site.baseurl}}/css/vendor/remixicon/remixicon.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+    <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 
 </head>
 
@@ -41,12 +41,7 @@
             <h1 class="logo mr-auto"><a href="index.html"><span>Pro</span>life</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-            <nav>
-                <ul>
-                    <li><a href="{{site.baseurl}}/">Home</a></li>
-                    <li><a href="{{site.baseurl}}/about.html">About</a></li>
-                </ul>
-            </nav>
+            {% include nav.html %}
 <!-- 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
@@ -112,13 +107,8 @@
 
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
+                        {% include nav.html %}
+
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
