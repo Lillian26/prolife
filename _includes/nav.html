@@ -1,7 +1,40 @@
-<nav>
+<!-- <nav>
     <ul>
-        <li><a href="{{site.baseurl}}/">Home</a></li>
+        <li><a href="{{site.baseurl}}/" class="active">Home</a></li>
         <li><a href="{{site.baseurl}}/about.html">About</a></li>
         <li><a href="{{site.baseurl}}/blog.html">Blog</a></li>
     </ul>
+</nav> -->
+
+<nav class="nav-menu d-none d-lg-block">
+    <ul>
+        <li class="{% if page.url == '/index.html'%}active{% endif %}"><a href="{{site.baseurl}}/">Home</a></li>
+        <li class="{% if page.url == '/about.html'%}active{% endif %}">
+            <a href="{{site.baseurl}}/about.html">About</a></li>
+
+        <li class="drop-down"><a href="">About2</a>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="drop-down"><a href="#">Deep Drop Down</a>
+                    <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li class="{% if page.url == '/blog.html'%}active{% endif %}"><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
 </nav>
+            <!-- .nav-menu -->
